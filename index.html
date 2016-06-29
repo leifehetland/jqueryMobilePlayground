@@ -9,16 +9,20 @@
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
+	<!-- Add id to page and href between them using the id-->
 	<div data-role="page" id="page1">
 
 		<div data-role="header">
 			<h1>My first page.</h1>
 		</div>
-
+		
+	<!-- Data-transitions: fade, flip, flow, pop, slide, slidedown, slidefade, slideup, turn, none -->
+	<!-- If data transition is none there is no load time due to only one HTML page having to load -->
+		
 		<div data-role="main" class="ui-content">
 			<h1>Hello World.</h1>
 			<p>Welcome to my first page.</p>
-			<a href="#page2">Page 2</a>
+			<a href="#page2" data-transition="flip">Page 2</a>
 		</div>
 
 		<div data-role="footer">
@@ -27,7 +31,6 @@
 		
 	</div>
 
-	<!-- Add id to page and href between them using the id-->
 	<div data-role="page" id="page2">
 
 		<div data-role="header">
@@ -37,7 +40,7 @@
 		<div data-role="main" class="ui-content">
 			<h1>Hello World.</h1>
 			<p>Welcome to my second page.</p>
-			<a href="#page1">Page 1</a>
+			<a href="#page1" data-transition="flip">Page 1</a>
 		</div>
 
 		<div data-role="footer">
