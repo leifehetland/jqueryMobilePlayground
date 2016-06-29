@@ -9,7 +9,7 @@
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 <body>
-	<div data-role="page">
+	<div data-role="page" id="page1">
 
 		<div data-role="header">
 			<h1>My first page.</h1>
@@ -18,6 +18,7 @@
 		<div data-role="main" class="ui-content">
 			<h1>Hello World.</h1>
 			<p>Welcome to my first page.</p>
+			<a href="#page2">Page 2</a>
 		</div>
 
 		<div data-role="footer">
@@ -25,7 +26,25 @@
 		</div>
 		
 	</div>
-	
+
+	<!-- Add id to page and href between them using the id-->
+	<div data-role="page" id="page2">
+
+		<div data-role="header">
+			<h1>My second page.</h1>
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<h1>Hello World.</h1>
+			<p>Welcome to my second page.</p>
+			<a href="#page1">Page 1</a>
+		</div>
+
+		<div data-role="footer">
+			<h2>&copy; Leif Hetland 2016</h2>
+		</div>
+		
+	</div>
 	<script src="/main.js"></script>
 </body>
 </html>
