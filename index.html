@@ -15,7 +15,13 @@
 	<div data-role="page" id="page1" data-theme="d">
 
 		<div data-role="header">
-			<h1>My first page.</h1>
+			<h1>My Mobile Portfolio</h1>
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-icon="home">Home</a></li>
+					<li><a href="#page2" data-icon="mail" data-transition="flip">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 
 	<!-- Data-transitions: fade, flip, flow, pop, slide, slidedown, slidefade, slideup, turn, none -->
@@ -24,32 +30,60 @@
 		<div data-role="main" class="ui-content">
 			<h1>Hello World.</h1>
 			<p>Welcome to my first page.</p>
-			<a href="#page2" data-transition="flip">Page 2</a>
-		</div>
+			
+			<div data-role="collapsible">
+				<h1>Experience</h1>
+				<p>This is my experience.</p>
+			</div>
 
-		<div data-role="footer">
-			<h2>&copy; Leif Hetland 2016</h2>
+			<div data-role="collapsible">
+				<h1>Projects</h1>
+				<p>These are my projects.</p>
+			</div>
+
+			<div data-role="collapsible">
+				<h1>Education</h1>
+				<p>This is my education.</p>
+			</div>
+
+			<div data-role="footer">
+				<h2>&copy; Leif Hetland 2016</h2>
+			</div>
 		</div>
-		
 	</div>
 
 	<div data-role="page" id="page2" data-theme="d">
 
 		<div data-role="header">
-			<h1>My second page.</h1>
+			<h1>Contact</h1>
+
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#page1" data-icon="home" data-transition="flip">Home</a></li>
+					<li><a href="#page2" data-icon="mail">Contact</a></li>
+				</ul>
+			</div>
+
 		</div>
 
 		<div data-role="main" class="ui-content">
-			<h1>Hello World.</h1>
-			<p>Welcome to my second page.</p>
-			<a href="#page1" data-transition="flip">Page 1</a>
+			<h1>Contact Me</h1>
+			<form>
+				<label for="essay">What do you think of the app?</label>
+				<textarea name="essay" id="essay" placeholder="Feedback!"></textarea>
+				<label for="rate">Please rate out of 10.</label>
+				<input type="range" name="rate" id="rate" min="0" max="10"/>
+				<input type="submit" name="go" id="go" value="Rate My App!"/>
+			</form>
+			
 		</div>
 
 		<div data-role="footer">
 			<h2>&copy; Leif Hetland 2016</h2>
 		</div>
-		
 	</div>
+
+	<!-- SCRIPTS -->
 	<script src="/main.js"></script>
 </body>
 </html>
