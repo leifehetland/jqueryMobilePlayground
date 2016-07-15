@@ -15,11 +15,11 @@
 	<div data-role="page" id="page1" data-theme="d">
 
 		<div data-role="header">
-			<h1>My Mobile Portfolio</h1>
+			<h1>Hello World!</h1>
 			<div data-role="navbar">
 				<ul>
 					<li><a href="#page1" data-icon="home">Home</a></li>
-					<li><a href="#page2" data-icon="mail" data-transition="flip">Contact</a></li>
+					<li><a href="#page2" data-icon="mail" data-transition="flip">My Questions</a></li>
 				</ul>
 			</div>
 		</div>
@@ -28,23 +28,15 @@
 	<!-- If data transition is none there is no load time due to only one HTML page having to load -->
 		
 		<div data-role="main" class="ui-content">
-			<h1>Leif E. Hetland</h1>
-			<p>I have been fascinated with society's relationship with technology. My goal is to create digital experiences that entertain and connect people.</p>
+			<h1>Welcome to my App</h1>
+			<p>After signing up, if you click on the My Questions tab the questionnaire
+			   will begin. You will be able to see your results once it is complete.</p>
 			
 			<div data-role="collapsible">
-				<h1>Experience</h1>
-				<p>This is my experience.</p>
+				<h1>Invite Your Friends!</h1>
+				<button>Invite!</button>
 			</div>
 
-			<div data-role="collapsible">
-				<h1>Projects</h1>
-				<p>These are my projects.</p>
-			</div>
-
-			<div data-role="collapsible">
-				<h1>Education</h1>
-				<p>This is my education.</p>
-			</div>
 
 			<div data-role="footer">
 				<h2>&copy; Leif Hetland 2016</h2>
@@ -67,13 +59,13 @@
 		</div>
 
 		<div data-role="main" class="ui-content">
-			<h1>Contact Me</h1>
+			<h1>My Questions</h1>
 			<form>
-				<label for="essay">What do you think of the app?</label>
-				<textarea name="essay" id="essay" placeholder="Feedback!"></textarea>
-				<label for="rate">Please rate out of 10.</label>
-				<input type="range" name="rate" id="rate" min="0" max="10"/>
-				<input type="submit" name="go" id="go" value="Rate My App!"/>
+				<label for="essay">One</label>
+				<textarea name="essay" id="essay" placeholder="Scale of 1 to 7, Strongly Disagree to Strongly Agree"></textarea>
+				<label for="rate">You find it easy to stay relaxed and focused even when there is some pressure.</label>
+				<input type="range" name="rate" id="rate" min="1" max="7"/>
+				<input type="submit" name="go" id="go" value="Next Question"/>
 			</form>
 			
 		</div>
